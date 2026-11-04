@@ -2,6 +2,8 @@ import background from "../../public/img/2a878f6c93a6f35eec672a24a51c2284.png";
 import logo from "../../public/img/Logo Dos.png";
 import { Link } from "react-router-dom";
 
+const VITE_API_URL= import.meta.env.VITE_API_URL || 'http://localhost:8080'
+
 const Footer = () => {
   return (
     <div className="w-full lg:bg-white flex flex-col gap-5 pt-1 xl:pt-9 xl:h-96">
@@ -11,7 +13,7 @@ const Footer = () => {
           <Link to="/" className="hover:text-orange-600 transition">Home</Link>
           <Link to="/mangas" className="hover:text-orange-600 transition">Mangas</Link>
           <a
-            href="http://localhost:8080/api-docs"
+            href={`${VITE_API_URL}/api-docs`}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange-600 transition font-medium"
