@@ -88,7 +88,7 @@ const Login = () => {
     <>
       {show && <Alert setShow={setShow} show={show} alert={alert} />}
       <NavBar />
-      <div className='w-full min-h-screen flex pt-16'>
+      <div className='w-full min-h-screen flex'>
         <div
           className='w-1/2 min-h-screen bg-cover bg-center hidden md:block'
           style={{ backgroundImage: "url('/img/img-login.png')" }}

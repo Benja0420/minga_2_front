@@ -94,7 +94,7 @@ const Register = () => {
     <>
       {show && <Alert alert={alert} setShow={setShow} show={show} />}
       <NavBar />
-      <div className='flex min-h-screen pt-16'>
+      <div className='flex min-h-screen'>
         <div className='w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12'>
           <div className='flex flex-col w-full max-w-md items-center text-center'>
             <img src="/img/Logo Dos.png" alt="Minga" className="h-16 mb-4" />
